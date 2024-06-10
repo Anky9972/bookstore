@@ -32,7 +32,7 @@ function Header({ login, setLogin, signup, setSignup, authpage, setAuthpage }) {
 
   return (
     <header className='w-full h-20 bg-[#5956e9] text-white'>
-      <nav className='w-full h-full flex justify-between items-center px-4 sm:px-8'>
+      <nav className='w-full h-full flex justify-between items-center px-4 sm:px-8 '>
         <Link to='/' className='flex justify-center items-center'>
           <span>
             <img src={img} alt="logo" className='w-14 sm:w-14' loading="lazy" />
@@ -47,7 +47,7 @@ function Header({ login, setLogin, signup, setSignup, authpage, setAuthpage }) {
             <NavLink to='/contact' className='cursor-pointer'>Contact Us</NavLink>
           </ul>
         </div>
-        <div className='absolute right-10 md:right-20 lg:relative flex justify-center items-center gap-4 sm:gap-6 md:gap-8'>
+        <div className='absolute right-10 md:right-20 lg:right-0 lg:relative flex justify-center items-center gap-4 sm:gap-6 md:gap-8'>
           <div>
             <button className='py-2 px-3 sm:px-4 bg-white rounded-3xl text-[#5956e9] font-bold' onClick={handleLoginClick}>
               Login
