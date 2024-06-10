@@ -1,23 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './pages/Home';
+import { Route, Routes } from 'react-router-dom';
+import Store from './pages/Store';
+import BookDetails from './pages/BookDetails';
+import Header from './components/Header';
+import { useState } from 'react';
+import ContactPage from './pages/ContactPage';
 
 function App() {
+  const [login, setLogin] = useState(false);
+  const [signup, setSignup] = useState(false);
+  const [authpage, setAuthpage] = useState(false);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header 
+        login={login} 
+        setLogin={setLogin} 
+        signup={signup} 
+        setSignup={setSignup} 
+        authpage={authpage} 
+        setAuthpage={setAuthpage} 
+      />
+      <Routes>
+        <Route 
+          path='/' 
+          element={<Home login={login} setLogin={setLogin} signup={signup} setSignup={setSignup} authpage={authpage} setAuthpage={setAuthpage} />}
+        />
+        <Route path='/store' element={<Store />} />
+        <Route path='/details/:id' element={<BookDetails />} />
+        <Route path='/contact' element={<ContactPage />} />
+      </Routes>
     </div>
   );
 }
