@@ -1,4 +1,4 @@
-# Epic Reads []
+# Epic Reads [https://bookstore-rho-three.vercel.app/]
 
 Epic Reads is a modern, responsive web application designed to provide users with an immersive reading experience. The project features a clean and aesthetically pleasing design and includes several key sections such as the header, hero, about, new arrivals, reviews, contact, and footer.
 
@@ -12,7 +12,7 @@ Epic Reads is a modern, responsive web application designed to provide users wit
     ```bash
     npm install
 3. **Start the development server:**
-```bash 
+    ```bash 
     npm start
 
 
