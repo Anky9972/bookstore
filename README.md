@@ -6,7 +6,7 @@ Epic Reads is a modern, responsive web application designed to provide users wit
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/epic-reads.git
+   git clone https://github.com/Anky9972/bookstore
    cd epic-reads
 2. **Install dependencies:**
     ```bash
